@@ -1,0 +1,123 @@
+*	{
+	margin: 0;
+	padding: 0;
+}
+
+h1	{
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px;
+	text-align: center;
+	margin: 0 50px;
+	color: rgba(11, 11, 11, 0.9); 
+    }
+
+h2	{
+	text-align: center;
+	font-size: 25px;
+	margin: 10px;
+}
+
+
+/* Main */
+.image1	{
+  	background-image: url(img/laptop.jpg);
+  	background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+
+ .content	{
+  	position: relative;
+  	z-index: 1;
+  	height: 400px;
+  	width: 100%;
+  	margin-top: 0;
+  	background-color: rgb(115, 78, 60);
+}
+
+.image2 	{
+	background-image: url("img/aerphone.jpg");
+	background-size: cover;
+	height: 700px;
+}
+
+.image3 	{
+	background-image: url("img/camera.jpg");
+	background-size: cover;
+	height: 700px;
+}
+
+/* Animaton time */
+
+#anime	{
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -moz-animation-iteration-count: infinite;
+}
+
+
+/*Button*/
+.button1	{
+	width: 150px;
+	height: 50px;
+	border: solid #90938f;
+	background-color: rgba(151, 13, 160, 0.3);
+	margin: auto;
+	border-radius: 5px;
+}
+
+.button1:hover	{
+	background-color: rgba(11, 11, 11, 0.9);
+	color: rgba(151, 13, 160, 0.3);
+}
+
+.skill	{
+	height: 180px;
+	width: 170px;
+	overflow: hidden;
+}
+
+.divi 	{
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	border: 2px solid #90938f;
+	background-color: rgba(115, 78, 60, 0.8);
+	width: 180px;
+	height: 200px;
+	margin: 14px;
+	position: relative;
+}
+
+.divi img 	{
+	width: 100%;
+	transition: .5s;
+	margin-top: 10px;
+}
+
+.texthover	{
+	position: absolute;
+	top: 0;
+	left: -100%;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(151, 13, 160, 0.7);
+	transition: .5s;
+}
+
+.texthover h3	{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.divi:hover .texthover	{
+	left: 0%;
+}
+
+.divi:hover img 	{
+	transform: scale(1.2);
+}
